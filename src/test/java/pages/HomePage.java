@@ -13,6 +13,8 @@ public class HomePage extends BeforeAndAfter{
 	private By oWelcome = By.xpath("//h3[contains(text(),' Welcome!')]");
 	private By oLogout = By.xpath("//a[text()='Logout']");
 	private By oNewAccount = By.xpath("//div[text()='Apply For New Account']");
+	private By oFundTransfer = By.xpath("(//a[@class='btn-blue-outline'])[1]");
+	private By oApplyLoan = By.xpath("(//a[@class='btn-blue-outline'])[2]");
 	private WebDriver driver;
 	private SeleniumWrapper oWrap;
 	
@@ -41,5 +43,14 @@ public class HomePage extends BeforeAndAfter{
 		driver.findElement(oNewAccount).click();
 		return new NewAccountPage(driver, node);
 	}
+	public TransferPage clickTransfer() {
+		driver.findElement(oFundTransfer).click();
+		return new TransferPage(driver, node);
+	}
+	public LoanPage clickApplyForLoan() {
+		driver.findElement(oApplyLoan).click();
+		return new LoanPage(driver, node);
+	}
+	
 
 }

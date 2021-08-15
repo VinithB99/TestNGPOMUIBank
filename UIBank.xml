@@ -6,6 +6,8 @@
       <class name="testcase.TC001_LoginPage"/>
       <class name="testcase.TC002_RegistrationPage"/>
       <class name="testcase.TC003_CreateAccount"/>
+      <class name="testcase.TC004_FundTransfer"/>
+      <class name="testcase.TC005_ApplyLoan"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
